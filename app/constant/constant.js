@@ -1,0 +1,32 @@
+const Endpoint = {
+    // BASE_URL : "http://storeaneka.my.id/api",
+    BASE_URL : "http://127.0.0.1:8000/api",
+    // CATEGORYIMAGE : "http://storeaneka.my.id/uploads/category/",
+    CATEGORYIMAGE : "http://127.0.0.1:8000/uploads/category/",
+    // PRODUCTIMAGE : "http://storeaneka.my.id/uploads/product/",
+    PRODUCTIMAGE : "http://127.0.0.1:8000/uploads/product/",
+    // CUSTOMERIMAGE : "http://storeaneka.my.id/uploads/user/",
+    CUSTOMERIMAGE : "http://127.0.0.1:8000/uploads/user/",
+    LOGIN : "/login",
+    LOGOUT : "/logout",
+    CATEGORY : "/category",
+    SAVECATEGORY : "/category-save",
+    DELETECATEGORY : "/category-delete",
+    VIEWCATEGORY : "/category-view",
+    VIEWCUSTOMER : "/customer-view",
+    UPDATECATEGORY : "/category-update",
+    PRODUCT : "/product",
+    SAVEPRODUCT : "/product-save",
+    DELETEPRODUCT : "/product-delete",
+    VIEWPRODUCT : "/product-view",
+    VIEWORDER : "/order-view",
+    UPDATEPRODUCT : "/product-update",
+    UPDATEORDERSTATUS : "/order-update",
+    CUSTOMER : "/customers",
+    PAYMENT : "/payments",
+    ORDER : "/orders",
+    CATEGORY : "/category",
+    REPORT : "/report"
+}
+
+export default Endpoint;
