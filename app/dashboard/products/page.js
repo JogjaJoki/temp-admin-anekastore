@@ -26,7 +26,9 @@ const PaginateLinks = ({ links, handleClick }) => {
     );
 }
 
-const TableItem = ( {product} ) => {
+const TableItem = ( {product, isPending, setPending, isTransitionStarted, startTransition} ) => {
+    const router = useRouter();
+    const { token, setToken } = useUserToken();
 
     const handleDelete = (id) => {  
         const confirmDelete = window.confirm("Apakah Anda yakin ingin menghapus produk ini?");
@@ -151,7 +153,7 @@ const Page = () => {
                 </thead>
                 <tbody>
                     {isMutating ? <tr><td>{'Get Data'}</td></tr> : 
-                    <TableItem product={product} />
+                    <TableItem product={product} isPending={isPending} setPending={setPending} isTransitionStarted={isTransitionStarted} startTransition={startTransition}/>
                     }
                 </tbody>
             </table>
